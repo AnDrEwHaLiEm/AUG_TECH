@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="picon:pc" clip-path="url(#clip0_0_72)">
+<path id="Vector" d="M40 40L35 30H5L0 40M30 20V5H10V20M5 25V0H35V25" fill="var(--fill-0, #C7A64E)"/>
+</g>
+<defs>
+<clipPath id="clip0_0_72">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>
