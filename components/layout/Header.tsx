@@ -11,7 +11,24 @@ export default function Header() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // If it's the home link, navigate to home page
+    if (href === '/') {
+      return; // Let the default Link behavior handle it
+    }
+
+    // For section links (starting with #)
     e.preventDefault();
+    
+    // Check if we're on the home page
+    const isHomePage = window.location.pathname === '/';
+    
+    if (!isHomePage) {
+      // If not on home page, navigate to home with hash
+      window.location.href = `/${href}`;
+      return;
+    }
+
+    // If on home page, scroll to section
     const targetId = href.replace('#', '');
     const targetElement = document.getElementById(targetId);
     
@@ -112,23 +129,42 @@ export default function Header() {
                     <ChevronDown className="w-full h-full" style={{ color: '#4E4E4E' }} />
                   </div>
                 )}
-                <a
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  className="whitespace-nowrap"
-                  style={{
-                    fontFamily: 'Cairo, sans-serif',
-                    fontWeight: '600',
-                    fontSize: 'clamp(18px, 2vw, 32px)',
-                    lineHeight: 'clamp(30px, 4vw, 60px)',
-                    color: '#4E4E4E',
-                    textAlign: 'center',
-                    textDecoration: 'none',
-                    cursor: 'pointer'
-                  }}
-                >
-                  {link.label}
-                </a>
+                {link.href === '/' ? (
+                  <Link
+                    href={link.href}
+                    className="whitespace-nowrap"
+                    style={{
+                      fontFamily: 'Cairo, sans-serif',
+                      fontWeight: '600',
+                      fontSize: 'clamp(18px, 2vw, 32px)',
+                      lineHeight: 'clamp(30px, 4vw, 60px)',
+                      color: '#4E4E4E',
+                      textAlign: 'center',
+                      textDecoration: 'none',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    className="whitespace-nowrap"
+                    style={{
+                      fontFamily: 'Cairo, sans-serif',
+                      fontWeight: '600',
+                      fontSize: 'clamp(18px, 2vw, 32px)',
+                      lineHeight: 'clamp(30px, 4vw, 60px)',
+                      color: '#4E4E4E',
+                      textAlign: 'center',
+                      textDecoration: 'none',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    {link.label}
+                  </a>
+                )}
                 {link.hasDropdown && openDropdown === link.href && (
                   <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 border border-gray-200 z-50">
                     {/* Dropdown content can be added here */}
@@ -187,27 +223,51 @@ export default function Header() {
           >
             <div className="flex flex-col py-4 px-4 sm:px-6">
               {NAV_LINKS.map((link, index) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  className="flex items-center justify-between py-4 px-4 rounded-lg hover:bg-gray-50 transition-all border-b border-gray-100 last:border-b-0"
-                  style={{
-                    color: '#4E4E4E',
-                    fontFamily: 'Cairo, sans-serif',
-                    fontWeight: '600',
-                    fontSize: 'clamp(18px, 4.5vw, 22px)',
-                    textDecoration: 'none',
-                    cursor: 'pointer',
-                    animationDelay: `${index * 0.05}s`,
-                    animation: 'slideInFromRight 0.3s ease-out forwards'
-                  }}
-                >
-                  <span>{link.label}</span>
-                  {link.hasDropdown && (
-                    <ChevronDown className="w-5 h-5" style={{ color: '#C7A64E' }} />
-                  )}
-                </a>
+                link.href === '/' ? (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="flex items-center justify-between py-4 px-4 rounded-lg hover:bg-gray-50 transition-all border-b border-gray-100 last:border-b-0"
+                    style={{
+                      color: '#4E4E4E',
+                      fontFamily: 'Cairo, sans-serif',
+                      fontWeight: '600',
+                      fontSize: 'clamp(18px, 4.5vw, 22px)',
+                      textDecoration: 'none',
+                      cursor: 'pointer',
+                      animationDelay: `${index * 0.05}s`,
+                      animation: 'slideInFromRight 0.3s ease-out forwards'
+                    }}
+                  >
+                    <span>{link.label}</span>
+                    {link.hasDropdown && (
+                      <ChevronDown className="w-5 h-5" style={{ color: '#C7A64E' }} />
+                    )}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    className="flex items-center justify-between py-4 px-4 rounded-lg hover:bg-gray-50 transition-all border-b border-gray-100 last:border-b-0"
+                    style={{
+                      color: '#4E4E4E',
+                      fontFamily: 'Cairo, sans-serif',
+                      fontWeight: '600',
+                      fontSize: 'clamp(18px, 4.5vw, 22px)',
+                      textDecoration: 'none',
+                      cursor: 'pointer',
+                      animationDelay: `${index * 0.05}s`,
+                      animation: 'slideInFromRight 0.3s ease-out forwards'
+                    }}
+                  >
+                    <span>{link.label}</span>
+                    {link.hasDropdown && (
+                      <ChevronDown className="w-5 h-5" style={{ color: '#C7A64E' }} />
+                    )}
+                  </a>
+                )
               ))}
               
               {/* Book Appointment Button in Mobile Menu */}

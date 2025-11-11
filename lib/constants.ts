@@ -64,8 +64,9 @@ export const SOCIAL_LINKS: SocialLinks = {
 };
 
 export const NAV_LINKS: NavLink[] = [
-  { href: '#home', label: 'الرئيسية' },
+  { href: '/', label: 'الرئيسية' },
   { href: '#about', label: 'من نحن' },
   { href: '#projects', label: 'مشاريعنا' },
   { href: '#services', label: 'خدماتنا' },
+  { href: '#contact', label: 'تواصل معنا' },
 ];
