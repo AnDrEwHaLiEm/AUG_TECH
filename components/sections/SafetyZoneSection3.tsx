@@ -57,6 +57,7 @@ export default function SafetyZoneSection3() {
                             }}>
                                 خدماتنا الأساسية
                             </h2>
+                            
                             <div style={{ height: '6px', width: 'clamp(160px, 30vw, 220px)', position: 'relative' }}>
                                 <div style={{
                                     position: 'absolute',

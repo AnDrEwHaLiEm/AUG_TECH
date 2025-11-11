@@ -46,7 +46,7 @@ export default function Header() {
               style={{ cursor: 'pointer' }}
             >
               <Image
-                src="/images/logo.png"
+                src="/images/headerLogo.png"
                 alt="Aug Tech Logo"
                 width={184}
                 height={86}
@@ -79,7 +79,7 @@ export default function Header() {
               style={{ cursor: 'pointer' }}
             >
               <Image
-                src="/images/logo.png"
+                src="/images/headerLogo.png"
                 alt="Aug Tech Logo"
                 width={120}
                 height={56}
