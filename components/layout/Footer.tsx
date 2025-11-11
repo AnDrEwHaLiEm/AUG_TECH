@@ -3,10 +3,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { BsTwitter } from 'react-icons/bs';
-import { LuInstagram } from 'react-icons/lu';
 import { IoLogoFacebook } from "react-icons/io5";
 import { RxLinkedinLogo } from "react-icons/rx";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
+import { AiFillInstagram } from 'react-icons/ai';
 
 export default function Footer() {
   const quickLinks = [
@@ -79,18 +79,18 @@ export default function Footer() {
               </h3>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 {/* Social Icons */}
-                <a href="#" aria-label="LinkedIn" style={{ width: '32px', height: '32px' }}>
+                <a href="#" aria-label="LinkedIn" >
                   <RxLinkedinLogo color='white' size={28} />
                 </a>
 
-                <a href="#" aria-label="Twitter" style={{ width: '32px', height: '32px' }}>
+                <a href="#" aria-label="Twitter" >
                   <BsTwitter color='white' size={28} />
                 </a>
-                <a href="#" aria-label="FaceBook" style={{ width: '32px', height: '32px' }}>
+                <a href="#" aria-label="FaceBook" >
                   <IoLogoFacebook color='white' size={28} />
                 </a>
-                <a href="#" aria-label="Instagram" style={{ width: '32px', height: '32px' }}>
-                  <LuInstagram color='white' size={28} />
+                <a href="#" aria-label="Instagram" >
+                  <AiFillInstagram  color='white' size={30} />
                 </a>
               </div>
             </div>

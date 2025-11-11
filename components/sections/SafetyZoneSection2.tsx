@@ -7,7 +7,7 @@ export default function SafetyZoneSection2() {
   return (
     <section
       id="about-safetyzone"
-      className="w-full py-20  flex flex-col items-center text-center px-4"
+      className="w-full py-12  flex flex-col items-center text-center px-4"
     >
       {/* Title */}
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
@@ -15,7 +15,7 @@ export default function SafetyZoneSection2() {
       </h2>
 
       {/* Underline */}
-      <div className="w-56 h-1 bg-linear-to-r from-[#F6E468] to-[#90853D] mb-12 mt-2"></div>
+      <div className="w-56 h-1 bg-linear-to-r from-[#F6E468] to-[#90853D] mb-8 mt-2"></div>
 
       {/* Content Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl w-full">

@@ -103,7 +103,7 @@ export default function SafetyZoneSection4() {
                             variants={cardVariants}
                             initial="hidden"
                             whileInView="visible"
-                            className="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                            className="bg-white shadow-md  overflow-hidden hover:shadow-lg transition-shadow duration-300"
                         >
                             <img
                                 src={benefit.image}
@@ -111,10 +111,10 @@ export default function SafetyZoneSection4() {
                                 className="w-full h-48 object-cover"
                             />
                             <div className="p-5">
-                                <h4 className="text-[14px] text-center font-bold text-gray-800 mb-2">
+                                <h4 className="text-[16px] text-center font-bold text-gray-800 mb-2">
                                     {benefit.title}
                                 </h4>
-                                <p className="text-gray-600 text-center text-[12px] leading-relaxed">
+                                <p className="text-gray-600 text-center font-semibold text-[14px] leading-relaxed">
                                     {benefit.description}
                                 </p>
                             </div>
@@ -141,7 +141,7 @@ export default function SafetyZoneSection4() {
                             variants={cardVariants}
                             initial="hidden"
                             whileInView="visible"
-                            className="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                            className="bg-white shadow-md  overflow-hidden hover:shadow-lg transition-shadow duration-300"
                         >
                             <img
                                 src={benefit.image}
@@ -149,10 +149,10 @@ export default function SafetyZoneSection4() {
                                 className="w-full h-48 object-cover"
                             />
                             <div className="p-5">
-                                <h4 className="text-[14px] text-center font-bold text-gray-800 mb-2">
+                                <h4 className="text-[16px] text-center font-bold text-gray-800 mb-2">
                                     {benefit.title}
                                 </h4>
-                                <p className="text-gray-600 text-center  text-[12px] leading-relaxed">
+                                <p className="text-gray-600 text-center font-semibold  text-[14px] leading-relaxed">
                                     {benefit.description}
                                 </p>
                             </div>
