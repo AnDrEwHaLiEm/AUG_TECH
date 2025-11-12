@@ -17,7 +17,7 @@ export default function Contact() {
     {
       id: 'location',
       title: 'الموقع',
-      value: 'السعودية , الرياض'
+      value: 'السعودية - الخبر - أبراج الراشد'
     },
     {
       id: 'booking',

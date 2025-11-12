@@ -9,10 +9,10 @@ export default function SafetyZoneSection7() {
   const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
-    setIsDesktop(window.innerWidth >= 1024);
+    setIsDesktop(window.innerWidth > 1024);
     
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
+      setIsDesktop(window.innerWidth > 1024);
     };
     
     window.addEventListener('resize', handleResize);
@@ -40,8 +40,8 @@ export default function SafetyZoneSection7() {
   return (
     <>
       <style jsx>{`
-        /* على الموبايل والتابلت: الكاردات تحت بعض بدون تعرج */
-        @media (max-width: 1023px) {
+        /* على الموبايل والتابلت وiPad: الكاردات تحت بعض بدون تعرج */
+        @media (max-width: 1024px) {
           .cards-container-section7 {
             margin-right: 0 !important;
             margin-left: 0 !important;
@@ -76,7 +76,7 @@ export default function SafetyZoneSection7() {
         }
         
         /* على اللابتوب فقط: negative margin للتداخل */
-        @media (min-width: 1024px) {
+        @media (min-width: 1025px) {
           .cards-container-section7 {
             margin-right: clamp(-100px, -10vw, -110px) !important;
           }
