@@ -10,25 +10,25 @@ const services = [
     id: 'software',
     title: 'تطوير البرمجيات',
     description: 'تصميم وبناء حلول برمجية فريدة تتناسب مع احتياجات عملك الخاصة.',
-    icon: '/images/icon-code.png'
+    icon: '/images/mdi_code.png'
   },
   {
     id: 'mobile',
     title: 'تطبيقات الجوال',
     description: 'إنشاء تطبيقات iOS و Android وسهلة الاستخدام تصل إلى جمهورك أينما كان.',
-    icon: '/images/icon-mobile.png'
+    icon: '/images/mobile.png'
   },
   {
     id: 'web',
     title: 'تصميم و تطوير المواقع',
     description: 'بناء بوابات إلكترونية احترافية تمثل واجهة عملك الرقمية.',
-    icon: '/images/icon-web.svg'
+    icon: '/images/web.svg'
   },
   {
     id: 'consulting',
     title: 'الاستشارات التقنية',
     description: 'نقدم خبراتنا لمساعدتك في التخطيط لمشاريعك التقنية واتخاذ القرارات الصائبة',
-    icon: '/images/icon-consulting.png'
+    icon: '/images/consult.png'
   }
 ];
 
