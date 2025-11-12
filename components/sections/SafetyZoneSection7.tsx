@@ -163,9 +163,9 @@ export default function SafetyZoneSection7() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                gap: 'clamp(15px, 2.5vw, 20px)',
-                padding: 'clamp(30px, 4vw, 40px)',
-                maxWidth: '85%'
+                gap: 'clamp(5px, .5vw, 10px)',
+                padding: 'clamp(5px, 1vw, 10px)',
+                maxWidth: '90%'
               }}>
                 <Image
                   src="/images/section7.png"
@@ -176,15 +176,15 @@ export default function SafetyZoneSection7() {
                     objectFit: 'contain',
                     width: 'clamp(100px, 15vw, 220px)',
                     height: 'auto',
-                    marginTop: 'clamp(15px, 3vw, 25px)',
-                    marginBottom: 'clamp(15px, 3vw, 25px)'
+                    marginTop: 'clamp(-15px, -2vw, -10px)',
+                    marginBottom: 'clamp(3px, 0.5vw, 5px)'
                   }}
                 />
 
                 <div style={{
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: 'clamp(12px, 2vw, 16px)',
+                  gap: 'clamp(5px, .5vw, 10px)',
                   alignItems: 'center',
                   justifyContent: 'center',
                   width: '100%'
@@ -193,7 +193,7 @@ export default function SafetyZoneSection7() {
                     fontFamily: 'Cairo, sans-serif',
                     fontWeight: '500',
                     fontSize: 'clamp(14px, 2.5vw, 18px)',
-                    lineHeight: 'clamp(22px, 3vw, 28px)',
+                    lineHeight: 'clamp(10px, 1vw, 20px)',
                     color: '#C7A64E',
                     margin: 0,
                     textAlign: 'center'
