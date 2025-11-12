@@ -68,7 +68,8 @@ export default function SafetyZoneSection6() {
           .image-circle-section6 {
             left: 50% !important;
             right: auto !important;
-            transform: translateX(-50%) !important;
+            transform: translateX(-50%) translateY(-50%) !important;
+            top: 50% !important;
           }
           .image-content-section6 {
             margin-left: 0 !important;
@@ -86,7 +87,7 @@ export default function SafetyZoneSection6() {
       <section id="safety-zone-section-6" style={{
         width: '100%',
         background: '#FFFFFF',
-        padding: 'clamp(60px, 8vw, 100px) clamp(16px, 5vw, 80px)',
+        padding: 'clamp(10px, 2vw, 20px) clamp(16px, 5vw, 80px)',
         fontFamily: 'Cairo, sans-serif',
         direction: 'rtl',
         position: 'relative'
@@ -191,17 +192,20 @@ export default function SafetyZoneSection6() {
             justifyContent: 'center',
             alignItems: 'center',
             position: 'relative',
-            minWidth: 'clamp(200px, 35vw, 500px)',
+            minWidth: 'clamp(300px, 90vw, 500px)',
+            minHeight: 'clamp(350px, 50vw, 550px)',
             order: 2
           }}>
             <div className="image-circle-section6" style={{
               position: 'absolute',
-              width: 'clamp(320px, 50vw, 550px)',
-              height: 'clamp(320px, 50vw, 550px)',
+              width: 'clamp(350px, 90vw, 550px)',
+              height: 'clamp(350px, 90vw, 550px)',
               background: '#F1EEE5',
               borderRadius: '50%',
               zIndex: 1,
-              left: 'clamp(0px, 3vw, 40px)'
+              left: 'clamp(0px, 3vw, 40px)',
+              top: '50%',
+              transform: 'translateY(-50%)'
             }} />
             <div className="image-content-section6" style={{ 
               position: 'relative', 
@@ -210,9 +214,9 @@ export default function SafetyZoneSection6() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              gap: 'clamp(12px, 2vw, 20px)',
-              padding: 'clamp(20px, 3vw, 30px)',
-              maxWidth: '100%'
+              gap: 'clamp(15px, 2.5vw, 20px)',
+              padding: 'clamp(30px, 4vw, 40px)',
+              maxWidth: '85%'
             }}>
               <Image
                 src="/images/section6.png"
@@ -221,8 +225,10 @@ export default function SafetyZoneSection6() {
                 height={150}
                 style={{ 
                   objectFit: 'contain',
-                  width: 'clamp(120px, 18vw, 280px)',
-                  height: 'auto'
+                  width: 'clamp(100px, 15vw, 220px)',
+                  height: 'auto',
+                  marginTop: 'clamp(15px, 3vw, 25px)',
+                  marginBottom: 'clamp(15px, 3vw, 25px)'
                 }}
               />
                <div style={{
