@@ -34,15 +34,15 @@ export default function SafetyZoneSection1() {
 
             {/* Content */}
             <ScrollReveal>
-                <div className="hero-content relative z-10 text-center" style={{ maxWidth: '1314px' }}>
+                <div className="hero-content relative z-10 text-center" style={{ maxWidth: '1314px', width: '100%', padding: '0 20px' }}>
                     {/* Title & Subtitle */}
                     <div
                         className="hero-title"
                         style={{
                             fontFamily: 'Cairo, sans-serif',
                             fontWeight: '700',
-                            fontSize: '70px',
-                            lineHeight: '100px',
+                            fontSize: 'clamp(32px, 8vw, 70px)',
+                            lineHeight: 'clamp(45px, 10vw, 100px)',
                             textAlign: 'center',
                             color: '#FFFFFF',
                             marginBottom: '24px'
@@ -58,7 +58,7 @@ export default function SafetyZoneSection1() {
                         style={{
                             fontFamily: 'Cairo, sans-serif',
                             fontWeight: '600',
-                            fontSize: '38px',
+                            fontSize: 'clamp(18px, 4vw, 38px)',
                             lineHeight: 'normal',
                             textAlign: 'center',
                             color: '#FFFFFF',

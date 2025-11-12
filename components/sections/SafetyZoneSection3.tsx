@@ -40,9 +40,21 @@ export default function SafetyZoneSection3() {
     ];
 
     return (
-        <section id="safety-zone-section-3" className="safety-zone-section-3" style={{ width: '100%', background: '#F5F5F5', padding: 'clamp(10px, 2vw, 20px) 0' }}>
+        <section id="safety-zone-section-3" className="safety-zone-section-3" style={{ 
+          width: '100%', 
+          maxWidth: '100vw',
+          background: '#F5F5F5', 
+          padding: 'clamp(10px, 2vw, 20px) 0',
+          boxSizing: 'border-box'
+        }}>
             <ScrollReveal>
-                <div style={{ maxWidth: '1312px', margin: '0 auto', padding: '0 clamp(10px, 2vw, 20px)' }}>
+                <div style={{ 
+                  maxWidth: '1312px', 
+                  margin: '0 auto', 
+                  padding: '0 clamp(10px, 2vw, 20px)',
+                  width: '100%',
+                  boxSizing: 'border-box'
+                }}>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(10px, 2vw, 20px)', alignItems: 'center' }}>
                         {/* Section Header */}
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', alignItems: 'center', justifyContent: 'center', width: '100%' }}>

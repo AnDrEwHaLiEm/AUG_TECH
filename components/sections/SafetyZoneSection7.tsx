@@ -6,13 +6,13 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 export default function SafetyZoneSection7() {
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
-    setIsDesktop(window.innerWidth > 768);
+    setIsDesktop(window.innerWidth >= 1024);
     
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > 768);
+      setIsDesktop(window.innerWidth >= 1024);
     };
     
     window.addEventListener('resize', handleResize);
@@ -40,12 +40,14 @@ export default function SafetyZoneSection7() {
   return (
     <>
       <style jsx>{`
-        /* على الموبايل: الكاردات تحت بعض بدون تعرج */
-        @media (max-width: 768px) {
+        /* على الموبايل والتابلت: الكاردات تحت بعض بدون تعرج */
+        @media (max-width: 1023px) {
           .cards-container-section7 {
             margin-right: 0 !important;
             margin-left: 0 !important;
             order: 2 !important;
+            width: 100% !important;
+            max-width: 100% !important;
           }
           .image-container-section7 {
             order: 1 !important;
@@ -53,33 +55,48 @@ export default function SafetyZoneSection7() {
             margin-bottom: 20px;
             width: 100% !important;
             min-width: 100% !important;
+            max-width: 100% !important;
             justify-content: center !important;
           }
           .card-section7 {
             margin-left: 0 !important;
             margin-right: 0 !important;
+            width: 100% !important;
+            max-width: 100% !important;
           }
           .image-circle-section7 {
             left: 50% !important;
             right: auto !important;
-            transform: translateX(-50%);
+            transform: translateX(-50%) !important;
           }
           .image-content-section7 {
             margin-right: 0 !important;
             margin-left: 0 !important;
           }
         }
+        
+        /* على اللابتوب فقط: negative margin للتداخل */
+        @media (min-width: 1024px) {
+          .cards-container-section7 {
+            margin-right: clamp(-100px, -10vw, -110px) !important;
+          }
+        }
       `}</style>
       <section style={{
         width: '100%',
+        maxWidth: '100vw',
         background: '#FFFFFF',
-        padding: 'clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px)',
+        padding: 'clamp(60px, 8vw, 100px) clamp(16px, 5vw, 80px)',
         fontFamily: 'Cairo, sans-serif',
-        direction: 'rtl'
+        direction: 'rtl',
+        position: 'relative',
+        boxSizing: 'border-box'
       }}>
         <div style={{
           maxWidth: '1300px',
-          margin: '0 auto'
+          margin: '0 auto',
+          width: '100%',
+          boxSizing: 'border-box'
         }}>
 
           {/* العنوان في المنتصف */}
@@ -164,7 +181,6 @@ export default function SafetyZoneSection7() {
               gap: 'clamp(16px, 2vw, 20px)',
               zIndex: 2,
               position: 'relative',
-              marginRight: 'clamp(-100px, -10vw, -110px)',
               order: 2
             }}>
               {steps.map((step, index) => (

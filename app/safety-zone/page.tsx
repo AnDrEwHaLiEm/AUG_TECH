@@ -10,7 +10,12 @@ import SafetyZoneSection7 from '@/components/sections/SafetyZoneSection7';
 
 export default function SafetyZonePage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen" style={{ 
+      width: '100%',
+      maxWidth: '100vw',
+      position: 'relative',
+      overflowX: 'hidden'
+    }}>
       <SafetyZoneHeader />
       <SafetyZoneSection1 />
       <SafetyZoneSection2 />

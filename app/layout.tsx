@@ -73,6 +73,13 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/images/logo.png" />
         <meta name="theme-color" content="#c9a961" />
+        {/* Mobile viewport fixes */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover" />
+        {/* iOS Safari fixes */}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        {/* Prevent auto-zoom on input focus (iOS) */}
+        <meta name="format-detection" content="telephone=no" />
       </head>
       <body style={{ fontFamily: 'Cairo, sans-serif' }} suppressHydrationWarning>
         {/* <ThemeProvider> */}

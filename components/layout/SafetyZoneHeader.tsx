@@ -8,7 +8,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 // Safety Zone specific navigation links
 const SAFETY_ZONE_NAV_LINKS = [
   { href: '/', label: 'الرئيسية' },
-  { href: '#about-safetyzone', label: 'عن سيفتي زون' },
+  { href: '#about-safetyzone', label: 'عن Safety Zone' },
   { href: '#safety-zone-section-3', label: 'خدماتنا' },
   { href: '#safety-zone-section-4', label: 'المميزات' },
   { href: '#safety-zone-section-5', label: 'كيف تعمل' },
@@ -161,7 +161,7 @@ export default function SafetyZoneHeader() {
 
           {/* Book Appointment Button - Large screens only */}
           <a
-            href="https://calendar.app.google/ECx7ACuQPa1jLTSe7"
+            href="https://calendar.app.google/8jrsXLN3G6qctvq69"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden lg:flex items-center justify-center shrink-0"
