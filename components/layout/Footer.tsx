@@ -2,11 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { BsTwitter } from 'react-icons/bs';
-import { IoLogoFacebook } from "react-icons/io5";
-import { RxLinkedinLogo } from "react-icons/rx";
-import { FaApple, FaGooglePlay } from "react-icons/fa";
-import { AiFillInstagram } from 'react-icons/ai';
 
 export default function Footer() {
   const quickLinks = [
@@ -65,7 +60,7 @@ export default function Footer() {
             alignItems: 'center',
           }}>
             {/* Social Section */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center' }}>
+            {/* <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center' }}>
               <h3 style={{
                 fontFamily: 'Cairo, sans-serif',
                 fontWeight: '700',
@@ -78,7 +73,6 @@ export default function Footer() {
                 تابعنا
               </h3>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                {/* Social Icons */}
                 <a href="#" aria-label="LinkedIn" >
                   <RxLinkedinLogo color='white' size={28} />
                 </a>
@@ -93,88 +87,10 @@ export default function Footer() {
                   <AiFillInstagram  color='white' size={30} />
                 </a>
               </div>
-            </div>
+            </div> */}
 
             {/* App Download Section */}
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '16px',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}>
-              <p style={{
-                fontFamily: 'Cairo, sans-serif',
-                fontWeight: '500',
-                fontSize: '18px',
-                lineHeight: '28px',
-                color: '#C7A64E',
-                margin: 0,
-                textAlign: 'center'
-              }}>
-                تحميل تطبيق سيفتي زون
-              </p>
-              <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-                <a
-                  href="#"
-                  style={{
-                    background: '#C7A64E',
-                    border: '1px solid #F6E468',
-                    minWidth: '120px',
-                    height: '48px',
-                    borderRadius: '8px',
-                    padding: '10px 16px',
-                    display: 'flex',
-                    gap:"5px",
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textDecoration: 'none',
-                    cursor: 'pointer'
-                  }}
-                >
-                  <FaApple color='white' size={20} />
-                  <span style={{
-                    fontFamily: 'Cairo, sans-serif',
-                    fontWeight: '500',
-                    fontSize: '16px',
-                    lineHeight: '24px',
-                    color: '#FFFFFF',
-                    whiteSpace: 'nowrap'
-                  }}>
-                    متجر ابل
-                  </span>
-                </a>
-                <a
-                  href="#"
-                  style={{
-                    background: '#C7A64E',
-                    border: '1px solid #F6E468',
-                    minWidth: '120px',
-                    height: '48px',
-                    borderRadius: '8px',
-                    padding: '10px 16px',
-                    display: 'flex',
-                    gap:"5px",
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textDecoration: 'none',
-                    cursor: 'pointer'
-                  }}
-                >
-                  <FaGooglePlay  color='white' size={20}/>
-                  <span style={{
-                    fontFamily: 'Cairo, sans-serif',
-                    fontWeight: '500',
-                    fontSize: '16px',
-                    lineHeight: '24px',
-                    color: '#FFFFFF',
-                    whiteSpace: 'nowrap'
-                  }}>
-                    متجر جوجل
-                  </span>
-                </a>
-              </div>
-            </div>
+           
           </div>
 
           {/* Right Section - Quick Links */}

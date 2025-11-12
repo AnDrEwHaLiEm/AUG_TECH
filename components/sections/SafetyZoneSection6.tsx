@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import ScrollReveal from '@/components/animations/ScrollReveal';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { FaApple, FaGooglePlay } from "react-icons/fa";
 
 export default function SafetyZoneSection6() {
   const [isDesktop, setIsDesktop] = useState(true);
@@ -84,19 +85,16 @@ export default function SafetyZoneSection6() {
       `}</style>
       <section id="safety-zone-section-6" style={{
         width: '100%',
-        maxWidth: '100vw',
         background: '#FFFFFF',
         padding: 'clamp(60px, 8vw, 100px) clamp(16px, 5vw, 80px)',
         fontFamily: 'Cairo, sans-serif',
         direction: 'rtl',
-        position: 'relative',
-        boxSizing: 'border-box'
+        position: 'relative'
       }}>
       <div style={{
         maxWidth: '1300px',
         margin: '0 auto',
-        width: '100%',
-        boxSizing: 'border-box'
+        width: '100%'
       }}>
 
         {/* العنوان في المنتصف */}
@@ -198,8 +196,8 @@ export default function SafetyZoneSection6() {
           }}>
             <div className="image-circle-section6" style={{
               position: 'absolute',
-              width: 'clamp(250px, 40vw, 550px)',
-              height: 'clamp(250px, 40vw, 550px)',
+              width: 'clamp(280px, 45vw, 550px)',
+              height: 'clamp(280px, 45vw, 550px)',
               background: '#F1EEE5',
               borderRadius: '50%',
               zIndex: 1,
@@ -208,19 +206,128 @@ export default function SafetyZoneSection6() {
             <div className="image-content-section6" style={{ 
               position: 'relative', 
               zIndex: 2, 
-              marginLeft: 'clamp(0px, 3vw, 40px)' 
+              marginLeft: 'clamp(0px, 3vw, 40px)',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: 'clamp(12px, 2vw, 20px)',
+              padding: 'clamp(10px, 2vw, 20px)'
             }}>
               <Image
                 src="/images/section6.png"
                 alt="customer steps illustration"
-                width={350}
-                height={350}
+                width={150}
+                height={150}
                 style={{ 
                   objectFit: 'contain',
-                  width: 'clamp(180px, 28vw, 350px)',
+                  width: 'clamp(120px, 18vw, 280px)',
                   height: 'auto'
                 }}
               />
+               <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 'clamp(12px, 2vw, 16px)',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '100%'
+            }}>
+              <p style={{
+                fontFamily: 'Cairo, sans-serif',
+                fontWeight: '500',
+                fontSize: 'clamp(14px, 2.5vw, 18px)',
+                lineHeight: 'clamp(22px, 3vw, 28px)',
+                color: '#C7A64E',
+                margin: 0,
+                textAlign: 'center'
+              }}>
+                تحميل تطبيق سيفتي زون
+              </p>
+              <div style={{ 
+                display: 'flex', 
+                gap: 'clamp(8px, 1.5vw, 12px)', 
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                justifyContent: 'center'
+              }}>
+                <a
+                  href="#"
+                  style={{
+                    background: '#C7A64E',
+                    border: '1px solid #F6E468',
+                    minWidth: 'clamp(100px, 20vw, 120px)',
+                    height: 'clamp(40px, 7vw, 48px)',
+                    borderRadius: 'clamp(6px, 1vw, 8px)',
+                    padding: 'clamp(8px, 1.5vw, 10px) clamp(12px, 2vw, 16px)',
+                    display: 'flex',
+                    gap: 'clamp(4px, 0.8vw, 5px)',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    textDecoration: 'none',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = '#B89640';
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = '#C7A64E';
+                    e.currentTarget.style.transform = 'scale(1)';
+                  }}
+                >
+                  <FaApple color='white' size={window.innerWidth < 768 ? 16 : 20} />
+                  <span style={{
+                    fontFamily: 'Cairo, sans-serif',
+                    fontWeight: '500',
+                    fontSize: 'clamp(12px, 2vw, 16px)',
+                    lineHeight: 'clamp(18px, 3vw, 24px)',
+                    color: '#FFFFFF',
+                    whiteSpace: 'nowrap'
+                  }}>
+                    متجر ابل
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  style={{
+                    background: '#C7A64E',
+                    border: '1px solid #F6E468',
+                    minWidth: 'clamp(100px, 20vw, 120px)',
+                    height: 'clamp(40px, 7vw, 48px)',
+                    borderRadius: 'clamp(6px, 1vw, 8px)',
+                    padding: 'clamp(8px, 1.5vw, 10px) clamp(12px, 2vw, 16px)',
+                    display: 'flex',
+                    gap: 'clamp(4px, 0.8vw, 5px)',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    textDecoration: 'none',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = '#B89640';
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = '#C7A64E';
+                    e.currentTarget.style.transform = 'scale(1)';
+                  }}
+                >
+                  <FaGooglePlay color='white' size={window.innerWidth < 768 ? 16 : 20}/>
+                  <span style={{
+                    fontFamily: 'Cairo, sans-serif',
+                    fontWeight: '500',
+                    fontSize: 'clamp(12px, 2vw, 16px)',
+                    lineHeight: 'clamp(18px, 3vw, 24px)',
+                    color: '#FFFFFF',
+                    whiteSpace: 'nowrap'
+                  }}>
+                    متجر جوجل
+                  </span>
+                </a>
+              </div>
+            </div>
             </div>
           </div>
 

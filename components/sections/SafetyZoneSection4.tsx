@@ -69,9 +69,13 @@ export default function SafetyZoneSection4() {
                     مزايا التحول الإلكتروني في سَفتي زون
                 </motion.h2>
                 {/* Underline */}
-                <motion.div className="w-120 h-1 bg-linear-to-r from-[#F6E468] to-[#90853D] mb-6 mt-2 mx-auto" initial={{ opacity: 0, y: -20 }}
+                <motion.div 
+                    className="h-1 bg-linear-to-r from-[#F6E468] to-[#90853D] mb-6 mt-2 mx-auto" 
+                    style={{ width: 'clamp(200px, 60%, 480px)', maxWidth: '90%' }}
+                    initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}></motion.div>
+                    transition={{ duration: 0.6 }}
+                ></motion.div>
                 <motion.p
                     className="text-lg text-gray-600 leading-relaxed mb-6 text-center"
                     initial={{ opacity: 0 }}
