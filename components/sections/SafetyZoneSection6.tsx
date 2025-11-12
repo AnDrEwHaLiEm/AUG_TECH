@@ -277,7 +277,7 @@ export default function SafetyZoneSection6() {
                     e.currentTarget.style.transform = 'scale(1)';
                   }}
                 >
-                  <FaApple color='white' size={window.innerWidth < 768 ? 16 : 20} />
+                  <FaApple color='white' size={isDesktop ? 20 : 16} />
                   <span style={{
                     fontFamily: 'Cairo, sans-serif',
                     fontWeight: '500',
@@ -315,7 +315,7 @@ export default function SafetyZoneSection6() {
                     e.currentTarget.style.transform = 'scale(1)';
                   }}
                 >
-                  <FaGooglePlay color='white' size={window.innerWidth < 768 ? 16 : 20}/>
+                  <FaGooglePlay color='white' size={isDesktop ? 20 : 16}/>
                   <span style={{
                     fontFamily: 'Cairo, sans-serif',
                     fontWeight: '500',
