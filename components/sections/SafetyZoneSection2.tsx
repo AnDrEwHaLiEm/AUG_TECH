@@ -11,7 +11,7 @@ export default function SafetyZoneSection2() {
     >
       {/* Title */}
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
-         <span className="text-[#bfa45a]"> عن سيفتي زون </span>
+         <span className="text-[#bfa45a]"> عن Safety Zone  </span>
       </h2>
 
       {/* Underline */}

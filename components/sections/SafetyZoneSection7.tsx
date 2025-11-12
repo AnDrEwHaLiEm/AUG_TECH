@@ -184,7 +184,7 @@ export default function SafetyZoneSection7() {
                 <div style={{
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: 'clamp(5px, .5vw, 10px)',
+                   gap: 'clamp(10px, 1vw, 30px)',
                   alignItems: 'center',
                   justifyContent: 'center',
                   width: '100%'
@@ -198,7 +198,7 @@ export default function SafetyZoneSection7() {
                     margin: 0,
                     textAlign: 'center'
                   }}>
-                    تحميل تطبيق سيفتي زون
+                    تحميل تطبيق Safety Zone
                   </p>
                   <div style={{ 
                     display: 'flex', 

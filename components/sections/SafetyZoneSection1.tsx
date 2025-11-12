@@ -48,7 +48,7 @@ export default function SafetyZoneSection1() {
                             marginBottom: '24px'
                         }}
                     >
-                        <p style={{ margin: 0 }}> سيفتي زون</p>
+                        <p style={{ margin: 0 }}>Safety Zone</p>
                         {/* <p style={{ margin: 0 }}>نبني المستقبل الرقمي بتقنيات مبتكرة</p> */}
                     </div>
 
