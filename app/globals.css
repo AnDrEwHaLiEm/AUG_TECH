@@ -518,17 +518,16 @@ section {
   .mobile-menu-button {
     flex-shrink: 0;
     z-index: 10;
-    order: 1;
+    order: 2;
   }
 
   .mobile-header-logo {
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important;
-    position: absolute !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+    justify-content: flex-start !important;
+    position: relative !important;
     z-index: 10;
+    order: 1;
   }
 
   .mobile-header-logo img {
@@ -754,6 +753,15 @@ section {
   /* Ensure mobile menu is full width */
   .mobile-header {
     width: 100% !important;
+    flex-direction: row !important;
+  }
+  
+  .mobile-header-logo {
+    order: 1 !important;
+  }
+  
+  .mobile-menu-button {
+    order: 2 !important;
   }
   
   /* Mobile menu links spacing */

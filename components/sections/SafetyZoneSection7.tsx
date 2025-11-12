@@ -42,11 +42,12 @@ export default function SafetyZoneSection7() {
       <style jsx>{`
         /* على الموبايل: الكاردات تحت بعض بدون تعرج */
         @media (max-width: 768px) {
-          .cards-container-section6 {
+          .cards-container-section7 {
             margin-right: 0 !important;
+            margin-left: 0 !important;
             order: 2 !important;
           }
-          .image-container-section6 {
+          .image-container-section7 {
             order: 1 !important;
             margin-top: 30px;
             margin-bottom: 20px;
@@ -54,17 +55,18 @@ export default function SafetyZoneSection7() {
             min-width: 100% !important;
             justify-content: center !important;
           }
-          .card-section6 {
+          .card-section7 {
             margin-left: 0 !important;
             margin-right: 0 !important;
           }
-          .image-circle-section6 {
+          .image-circle-section7 {
             left: 50% !important;
             right: auto !important;
             transform: translateX(-50%);
           }
-          .image-content-section6 {
+          .image-content-section7 {
             margin-right: 0 !important;
+            margin-left: 0 !important;
           }
         }
       `}</style>
@@ -117,7 +119,7 @@ export default function SafetyZoneSection7() {
           }}>
 
             {/* الصورة مع الدائرة على اليمين */}
-            <div className="image-container-section6" style={{
+            <div className="image-container-section7" style={{
               flex: '0 0 auto',
               display: 'flex',
               justifyContent: 'center',
@@ -126,7 +128,7 @@ export default function SafetyZoneSection7() {
               minWidth: 'clamp(200px, 35vw, 500px)',
               order: 1
             }}>
-              <div className="image-circle-section6" style={{
+              <div className="image-circle-section7" style={{
                 position: 'absolute',
                 width: 'clamp(250px, 40vw, 550px)',
                 height: 'clamp(250px, 40vw, 550px)',
@@ -135,7 +137,7 @@ export default function SafetyZoneSection7() {
                 zIndex: 1,
                 right: 'clamp(0px, 3vw, 40px)'
               }} />
-              <div className="image-content-section6" style={{
+              <div className="image-content-section7" style={{
                 position: 'relative',
                 zIndex: 2,
                 marginRight: 'clamp(0px, 3vw, 40px)'
@@ -155,7 +157,7 @@ export default function SafetyZoneSection7() {
             </div>
 
             {/* الكاردات على الشمال */}
-            <div className="cards-container-section6" style={{
+            <div className="cards-container-section7" style={{
               flex: '1 1 clamp(280px, 100%, 650px)',
               display: 'flex',
               flexDirection: 'column',
@@ -168,7 +170,7 @@ export default function SafetyZoneSection7() {
               {steps.map((step, index) => (
                 <ScrollReveal key={index}>
                   <motion.div
-                    className="card-section6"
+                    className="card-section7"
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}

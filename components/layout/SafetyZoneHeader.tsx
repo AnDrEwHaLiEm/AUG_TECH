@@ -73,20 +73,7 @@ export default function SafetyZoneHeader() {
 
           {/* Mobile & Tablet Header - Logo + Menu Button */}
           <div className="mobile-header lg:hidden flex items-center justify-between w-full h-full">
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="mobile-menu-button p-2 rounded-lg hover:bg-gray-100 transition-colors z-10"
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6 sm:w-7 sm:h-7" style={{ color: '#4E4E4E' }} />
-              ) : (
-                <Menu className="w-6 h-6 sm:w-7 sm:h-7" style={{ color: '#4E4E4E' }} />
-              )}
-            </button>
-            
-            {/* Logo */}
+            {/* Logo على اليمين */}
             <Link 
               href="/" 
               className="mobile-header-logo flex items-center z-10"
@@ -102,6 +89,19 @@ export default function SafetyZoneHeader() {
                 priority
               />
             </Link>
+            
+            {/* Mobile Menu Button على الشمال */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="mobile-menu-button p-2 rounded-lg hover:bg-gray-100 transition-colors z-10"
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6 sm:w-7 sm:h-7" style={{ color: '#4E4E4E' }} />
+              ) : (
+                <Menu className="w-6 h-6 sm:w-7 sm:h-7" style={{ color: '#4E4E4E' }} />
+              )}
+            </button>
           </div>
 
           {/* Center: Navigation Links - Large screens only (1024px+) */}
