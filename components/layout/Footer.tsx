@@ -43,7 +43,7 @@ export default function Footer() {
           }}>
             <Link href="#home">
               <Image
-                src="/images/logo.png"
+                src="/images/awjFooterLogo.png"
                 alt="Aug Tech Logo"
                 width={250}
                 height={119}

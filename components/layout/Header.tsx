@@ -62,7 +62,7 @@ export default function Header() {
               style={{ cursor: 'pointer' }}
             >
               <Image
-                src="/images/headerLogo.png"
+                src="/images/awjLogo.png"
                 alt="Aug Tech Logo"
                 width={184}
                 height={86}
