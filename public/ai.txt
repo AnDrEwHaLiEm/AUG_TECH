@@ -1,0 +1,34 @@
+# Ai.txt file for https://augtech.com
+# This file provides information for AI crawlers and assistants
+
+# Website Information
+Site-Name: Aug Tech | أوج تك
+Site-URL: https://augtech.com
+Site-Description: نبني المستقبل الرقمي بتقنيات متقدمة - نقدم الحلول الإبداعية التي تحاكي رغباتكم وتلبي احتياجاتكم على أعلى معيار دولي من الجودة الابتكار الذي يهدف إلى رفع كفاءة الاعمال ويزيد معدلات النمو
+Language: ar, en
+Primary-Language: ar
+Region: SA
+
+# Contact
+Contact-Email: info@augtech.com
+Contact-Phone: +966 50 123 4567
+
+# AI Crawling Policy
+AI-Crawling: allowed
+AI-Training: allowed
+AI-Indexing: allowed
+
+# Services
+Services: استشارات قانونية, استشارات الأمن, حلول رقمية, تقنية
+
+# Social Media
+Facebook: https://facebook.com
+Twitter: https://twitter.com
+LinkedIn: https://linkedin.com
+Instagram: https://instagram.com
+
+# Sitemap
+Sitemap: https://augtech.com/sitemap.xml
+
+# Last Updated
+Last-Updated: 2025-11-15

@@ -80,6 +80,65 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         {/* Prevent auto-zoom on input focus (iOS) */}
         <meta name="format-detection" content="telephone=no" />
+        {/* JSON-LD Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  '@id': 'https://augtech.com/#organization',
+                  name: 'Aug Tech | أوج تك',
+                  alternateName: 'أوج تك',
+                  url: 'https://augtech.com',
+                  logo: {
+                    '@type': 'ImageObject',
+                    url: 'https://augtech.com/images/logo.png',
+                    width: 1200,
+                    height: 630,
+                  },
+                  description: 'نبني المستقبل الرقمي بتقنيات متقدمة - نقدم الحلول الإبداعية التي تحاكي رغباتكم وتلبي احتياجاتكم على أعلى معيار دولي من الجودة الابتكار الذي يهدف إلى رفع كفاءة الاعمال ويزيد معدلات النمو',
+                  contactPoint: {
+                    '@type': 'ContactPoint',
+                    telephone: '+966 50 123 4567',
+                    email: 'info@augtech.com',
+                    contactType: 'Customer Service',
+                    areaServed: 'SA',
+                    availableLanguage: ['Arabic', 'English'],
+                  },
+                  address: {
+                    '@type': 'PostalAddress',
+                    addressLocality: 'Riyadh',
+                    addressCountry: 'SA',
+                  },
+                  sameAs: [
+                    'https://facebook.com',
+                    'https://twitter.com',
+                    'https://linkedin.com',
+                    'https://instagram.com',
+                  ],
+                },
+                {
+                  '@type': 'WebSite',
+                  '@id': 'https://augtech.com/#website',
+                  url: 'https://augtech.com',
+                  name: 'Aug Tech | أوج تك',
+                  inLanguage: 'ar',
+                  publisher: {
+                    '@id': 'https://augtech.com/#organization',
+                  },
+                  potentialAction: {
+                    '@type': 'SearchAction',
+                    target: 'https://augtech.com/?s={search_term_string}',
+                    'query-input': 'required name=search_term_string',
+                  },
+                },
+              ],
+            }),
+          }}
+        />
       </head>
       <body style={{ fontFamily: 'Cairo, sans-serif' }} suppressHydrationWarning>
         {/* <ThemeProvider> */}
